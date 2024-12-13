@@ -2,21 +2,24 @@ public class Plot {
 
     public String plantName;
     public int numberOfPlants;
+    public int numberOfCarrots;
     public boolean needsWater;
 
-    public Plot(String pPlantName, int pNumberOfPlants, boolean pNeedsWater) {
+    public Plot(String pPlantName, int pNumberOfPlants, boolean pNeedsWater, int pNumberOfCarrots) {
 
         plantName = pPlantName;
         numberOfPlants = pNumberOfPlants;
         needsWater = pNeedsWater;
+        numberOfCarrots=pNumberOfCarrots;
 
     }
 
     public Plot() {
 
-        // choose random numbers for plantID and numberOfPlants
+        // choose random numbers for plantID and numberOfPlants and numberOfCarrots
 
         numberOfPlants = (int)(Math.random() * 100 + 10);
+        numberOfCarrots=(int)(Math.random() * 100 + 10);
         int plantID = (int)(Math.random() * 5);
 
         // assign plant name based on plantID
